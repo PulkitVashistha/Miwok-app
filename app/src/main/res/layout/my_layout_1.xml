@@ -1,21 +1,24 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_1"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="@dimen/list_item_height"
     android:background="@color/tan_background"
-    android:minHeight="@dimen/list_item_height"
-    android:orientation="horizontal"
-    android:id="@+id/layout_1">
+    android:minHeight="@dimen/list_item_height">
 
     <ImageView
         android:id="@+id/list_item_icon"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height" />
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/text_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/list_item_icon"
         android:background="@color/category_numbers"
         android:orientation="vertical"
         android:paddingLeft="16dp">
@@ -23,7 +26,7 @@
         <TextView
             android:id="@+id/Miwok_word"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="44dp"
             android:layout_weight="1"
             android:gravity="bottom"
             android:textAppearance="?android:textAppearanceMedium"
@@ -34,7 +37,7 @@
         <TextView
             android:id="@+id/English_word"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="44dp"
             android:layout_weight="1"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
@@ -42,11 +45,12 @@
             tools:text="one" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            
-            android:src="@drawable/ic_play_arrow_white_24dp"
-            />
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_play_arrow_white_24dp" />
 
-    </LinearLayout>
-</LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
