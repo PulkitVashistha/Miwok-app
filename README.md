@@ -2,7 +2,21 @@ Miwok App
 ===================================
 
 This app displays lists of vocabulary words for the user to learn the Miwok language.
-Used in a Udacity course in the Beginning Android Nanodegree.
+Uses audio assistance for better pronunciation of phrases.
+
+ScreenShots
+--------------
+<img src="Miwok1.png" width=400 height=700>
+<img src="Miwok2.png" width=400 height=700>
+<img src="Miwok3.png" width=400 height=700>
+<img src="Miwok4.png" width=400 height=700>
+
+Description
+--------------
+
+- Mediaplayer class used
+- Viewpager included
+- ListView along with modified ArrayAdapter class included
 
 Pre-requisites
 --------------
