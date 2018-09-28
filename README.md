@@ -15,8 +15,7 @@ Description
 --------------
 
 - Mediaplayer class used
-- Viewpager included
-- ListView along with modified ArrayAdapter class included
+- Recycler View included
 
 Pre-requisites
 --------------
